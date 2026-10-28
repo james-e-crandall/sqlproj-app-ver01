@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="sqlproj-app.AppHost/sqlproj-app.AppHost.csproj" />
+  <Project Path="sqlproj-app.ServiceDefaults/sqlproj-app.ServiceDefaults.csproj" />
+</Solution>
