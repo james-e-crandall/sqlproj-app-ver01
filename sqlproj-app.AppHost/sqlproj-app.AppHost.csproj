@@ -9,4 +9,10 @@
     <UserSecretsId>bee751e0-cc31-4187-90fa-b3a972f1189b</UserSecretsId>
   </PropertyGroup>
 
+
+  <ItemGroup>
+    <PackageReference Include="MessagePack" Version="3.1.12" />
+  </ItemGroup>
+
+
 </Project>
