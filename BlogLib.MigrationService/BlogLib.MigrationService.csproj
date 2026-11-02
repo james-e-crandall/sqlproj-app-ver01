@@ -16,4 +16,5 @@
     <ProjectReference Include="..\sqlproj-app.ServiceDefaults\sqlproj-app.ServiceDefaults.csproj" />
     <ProjectReference Include="..\BlogLib\BlogLib.csproj" />
   </ItemGroup>
+
 </Project>

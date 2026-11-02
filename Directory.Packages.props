@@ -2,6 +2,8 @@
   <PropertyGroup>
     <!-- Enable central package management, https://learn.microsoft.com/en-us/nuget/consume-packages/Central-Package-Management -->
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <!-- Transitive Pinning https://learn.microsoft.com/en-us/nuget/consume-packages/central-package-management#transitive-pinning -->
+    <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
   </PropertyGroup>
   <!-- AppHost -->
   <ItemGroup>
@@ -26,6 +28,10 @@
   </ItemGroup>
   <!-- BlogLib.MigrationService -->
   <ItemGroup>
+
     <PackageVersion Include="Microsoft.Extensions.Hosting" Version="10.0.14" />
+
+    <PackageVersion Include="System.Security.Cryptography.Pkcs" Version="10.0.14" />
+
   </ItemGroup>
 </Project>
