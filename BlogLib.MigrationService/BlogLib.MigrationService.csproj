@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-BlogLib.MigrationService-40d45e70-285b-4ee7-8859-d9a91ca7401a</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" />
+    <PackageReference Include="Aspire.Microsoft.EntityFrameworkCore.SqlServer" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\sqlproj-app.ServiceDefaults\sqlproj-app.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\BlogLib\BlogLib.csproj" />
+  </ItemGroup>
+</Project>
