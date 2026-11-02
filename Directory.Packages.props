@@ -10,6 +10,7 @@
     <PackageVersion Include="Aspire.Hosting.SqlServer" Version="13.6.4" />
     <PackageVersion Include="Aspire.Microsoft.EntityFrameworkCore.SqlServer" Version="13.6.4" />
     <PackageVersion Include="CommunityToolkit.Aspire.Hosting.SqlDatabaseProjects" Version="13.6.2-beta.959" />
+    <PackageVersion Include="CommunityToolkit.Aspire.Hosting.SqlServer.Extensions" Version="13.6.2-beta.959" />
     <PackageVersion Include="MessagePack" Version="3.1.12" />
   </ItemGroup>
   <!-- ServiceDefaults -->
@@ -28,10 +29,20 @@
   </ItemGroup>
   <!-- BlogLib.MigrationService -->
   <ItemGroup>
-
     <PackageVersion Include="Microsoft.Extensions.Hosting" Version="10.0.14" />
-
     <PackageVersion Include="System.Security.Cryptography.Pkcs" Version="10.0.14" />
-
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.14">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageVersion>
+  </ItemGroup>
+  <!-- Data-Tier -->
+  <ItemGroup>
+    <PackageVersion Include="ErikEJ.DacFX.SqlServer.Rules" Version="5.1.2">
+      <PageVerifyMode>Checksum</PageVerifyMode>
+      <QueryStoreDesiredState>ReadWrite</QueryStoreDesiredState>
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageVersion>
   </ItemGroup>
 </Project>
