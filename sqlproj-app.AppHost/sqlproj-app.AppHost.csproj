@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BlogLib.MigrationService\BlogLib.MigrationService.csproj" />
+    <ProjectReference Include="..\BlogApi\BlogApi.csproj" />
   </ItemGroup>
 
 

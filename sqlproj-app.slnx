@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="BlogApi/BlogApi.csproj" />
   <Project Path="BlogLib.MigrationService/BlogLib.MigrationService.csproj" />
   <Project Path="BlogLib/BlogLib.csproj" />
   <Project Path="Data-Tier/Data-Tier.csproj" />

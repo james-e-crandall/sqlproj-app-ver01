@@ -23,5 +23,10 @@ var blogLibMigrationService = builder.AddSqlProject("catalog-schema")
     .WithDacpac("../Data-Tier/bin/Debug/net10.0/Data-Tier.dacpac")
     .WithReference(db);
 
+var blogApi = builder.AddProject<Projects.BlogApi>("BlogApi")
+    .WithReference(db)
+    .WaitFor(db)
+    .WaitForCompletion(blogLibMigrationService);
+
 
 builder.Build().Run();
